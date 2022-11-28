@@ -1,0 +1,8 @@
+- name: AWS EC2 Setup
+  hosts: ec2
+  become: true
+  remote_user: ubuntu
+
+  roles:
+    - grafana
+    - prometheus
